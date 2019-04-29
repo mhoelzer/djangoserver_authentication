@@ -1,0 +1,13 @@
+<h1>HELLO, WORLD</h1>
+
+<ul>
+    {% for foo in stuff%}
+    <li>{{ foo.title }}, by {{ foo.author }}</li>
+    <ul>
+        <li>{{ foo.body }}</li>
+    </ul>
+    {% endfor %}
+</ul>
+
+<!-- {{ stuff }} -->
+<!-- just prrinting out the html stuff -->
