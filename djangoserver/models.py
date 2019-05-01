@@ -11,7 +11,7 @@ class NewsAuthor(models.Model):
     byline = models.CharField(max_length=250, null=True, blank=True)
     # null=True means can be initialized empty
     # blank=True means it can stay empty
-        # null=true means can have nothing instanciated or create w/o data; blank means save w/o data
+    # null=true means can have nothing instanciated or create w/o data; blank means save w/o data
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     def __str__(self):
