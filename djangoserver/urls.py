@@ -27,5 +27,7 @@ admin.site.register(NewsItem)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", index),
-    path("newsadd/", newsadd)
+    path("newsadd/", newsadd),
+    path("signup/", signup_view),
+    path("login/", login_view)
 ]
