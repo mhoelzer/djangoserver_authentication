@@ -19,14 +19,14 @@ from djangoserver.models import NewsItem
 from django.contrib import admin
 from django.urls import path
 from djangoserver.views import index
-from djangoserver.views import newsadd
+from djangoserver.views import newsadd, signup_view, login_view
 
 admin.site.register(NewsAuthor)
 admin.site.register(NewsItem)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", index),
+    path("", index, name="homepage"),
     path("newsadd/", newsadd),
     path("signup/", signup_view),
     path("login/", login_view)

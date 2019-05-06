@@ -13,6 +13,7 @@ class NewsAuthor(models.Model):
     # blank=True means it can stay empty
     # null=true means can have nothing instanciated or create w/o data; blank means save w/o data
     user = models.OneToOneField(User, on_delete=models.CASCADE)
+    # website = models.URLField(null=true)
 
     def __str__(self):
         return self.name  # won't put a strange-looking string
